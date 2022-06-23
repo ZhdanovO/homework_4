@@ -29,5 +29,33 @@ public class Main {
             System.out.println(yearObservation);
             yearObservation = yearObservation + 79;
         }
+
+        //task 4
+        for (int k = 1; k <= 30; k++) {
+            String output = k + ": ";
+            if (k % 3 == 0 && k % 5 == 0){
+                output = output + "ping pong";
+            } else if (k % 3 == 0) {
+                output = output + "ping";
+            } else if ( k % 5 == 0) {
+                output = output + "pong";
+            }
+            System.out.println(output);
+        }
+
+        //task 5
+        System.out.println();
+        int countFibo = 10;
+        int firstNum = 0;
+        int secondNum = 1;
+        int calc;
+        System.out.print(firstNum + " ");
+        for (int l = 1; l < countFibo; l++) {
+            calc = firstNum + secondNum;
+            firstNum = secondNum;
+            secondNum = calc;
+            System.out.print(firstNum + " ");
+
+        }
     }
 }

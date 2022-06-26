@@ -22,12 +22,14 @@ public class Main {
 
         //task 3
         int currentYear = 2021;
-        int startPeriod = currentYear - 100;
+        int startPeriod = currentYear - 200;
         int endPeriod = currentYear + 100;
         int yearObservation = startPeriod;
         while (yearObservation <= endPeriod) {
-            System.out.println(yearObservation);
-            yearObservation = yearObservation + 79;
+            if (yearObservation % 79 == 0) {
+                System.out.println(yearObservation);
+            }
+            yearObservation = yearObservation + 1;
         }
 
         //task 4
